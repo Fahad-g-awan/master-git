@@ -13,6 +13,10 @@ This will show the informaiton about the author, time and commit message along w
 
 ```
 git log
+or
+git log --oneline
+or
+git log --oneline --graph --all --decorate
 ```
 
 ### To see changes or state of another commit
@@ -27,4 +31,66 @@ git checkout <commit_hash>
 
 ```
 git checkout -f main
+```
+
+### To list global configuration
+
+```
+git config --global --list
+```
+
+### Add a Remote URL (if there isn’t already one)
+
+```
+git remote add origin git@github.com-account1:username/repo.git
+
+```
+
+### Set the Remote URL for an Existing Repository:
+
+```
+git remote set-url origin git@github.com-account1:username/repo.git
+```
+
+### Push your local changes to remote
+
+```
+git push -u origin
+```
+
+### Check connection
+
+```
+ssh -T git@github.com
+```
+
+### Verify the Remote URL
+
+```
+git remote -v
+```
+
+### List SSH Keys
+
+```
+ls -l ~/.ssh
+
+```
+
+### Create new branch
+
+```
+git branch feat/branch
+```
+
+### Create and checkout to new branch
+
+```
+git checkout -b feat/branch
+```
+
+### To create a new banch from a specific branch which you want to make the source of new branch
+
+```
+git branh new-branch source-branch
 ```
