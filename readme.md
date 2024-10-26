@@ -147,3 +147,16 @@ git push -f origin branch_name
 ```
 git pull
 ```
+
+### To save the current satged or unstaged changes before doing another pull or fix
+
+```
+git stash
+```
+
+And to view the stash list and go back to specifix stash
+
+```
+git stash list
+git stash apply stash_name
+```
