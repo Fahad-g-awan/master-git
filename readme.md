@@ -147,3 +147,9 @@ git push -f origin branch_name
 ```
 git pull
 ```
+
+### You can also update the commit message
+
+```
+git commit --amend -m "new message"
+```
