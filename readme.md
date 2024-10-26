@@ -126,3 +126,24 @@ git branch -d branch-name
 ```
 git merge branch-name
 ```
+
+### To fix a code or to go to a specific commit where code was working fine
+
+```
+git reset <commit_hash>
+```
+
+This is a mix-reset and changes made after that commit become unstaged for you to either keep them or discard them.
+After that we can push our changes to that branch and for that there are two ways:
+
+- Force push and update remote
+
+```
+git push -f origin branch_name
+```
+
+- Or first pull and resolve confict and then push
+
+```
+git pull
+```
