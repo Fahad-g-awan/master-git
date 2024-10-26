@@ -94,3 +94,29 @@ git checkout -b feat/branch
 ```
 git branh new-branch source-branch
 ```
+
+### To show all branches
+
+```
+git branch
+```
+
+### Prune Deleted Remote Branches
+
+Use the --prune option with git fetch to remove any references to branches that no longer exist on the remote
+
+```
+git fetch --prune
+```
+
+Verify the Branch is Gone
+
+```
+git branch -r
+```
+
+Optional Cleanup (if still showing locally)
+
+```
+git branch -d branch-name
+```
