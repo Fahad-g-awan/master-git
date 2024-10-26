@@ -120,3 +120,9 @@ Optional Cleanup (if still showing locally)
 ```
 git branch -d branch-name
 ```
+
+### To merge a branch into current branch
+
+```
+git merge branch-name
+```
