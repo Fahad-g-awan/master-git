@@ -41,6 +41,14 @@ git diff --name-only --cached
 git restore --staged filename
 ```
 
+### Remove a file from tracking and from git
+
+```
+git rm --cached filename
+git commit -m "Remove filename"
+git push
+```
+
 ### To see logs of previous commits
 
 This will show the informaiton about the author, time and commit message along with the commit hash or ID
