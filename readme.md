@@ -7,6 +7,34 @@ git add .
 git commit -m "Added files"
 ```
 
+## See which files are not staged
+
+```
+git status
+```
+
+Command shows the differences between your working directory and the staging area (index). It’s useful to review changes that are not yet staged for commit.
+
+```
+git diff
+```
+
+## To see staged changes
+
+```
+git diff --cached
+or
+git dif --staged
+```
+
+This command shows the differences between the staged changes and the last commit
+
+Alternatively, if you just want to see a list of staged files without their content
+
+```
+git diff --name-only --cached
+```
+
 ### To see logs of previous commits
 
 This will show the informaiton about the author, time and commit message along with the commit hash or ID
@@ -21,7 +49,7 @@ git log --oneline --graph --all --decorate
 
 ### To see changes or state of another commit
 
-Now the head will poin to this branch
+Now the head will point to this branch
 
 ```
 git checkout <commit_hash>
@@ -74,7 +102,6 @@ git remote -v
 
 ```
 ls -l ~/.ssh
-
 ```
 
 ### Create new branch
